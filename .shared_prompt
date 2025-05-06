@@ -56,9 +56,9 @@ else
     userStyle="${orange}"
 fi
 
-# Highlight the hostname when connected via SSH.
-if [[ "${SSH_TTY}" ]]; then
-    hostStyle="${bold}${red}"
-else
-    hostStyle="${yellow}"
-fi
+# # Highlight the hostname when connected via SSH.
+# if [[ "${SSH_TTY}" ]]; then
+#     hostStyle="${bold}${red}"
+# else
+#     hostStyle="${yellow}"
+# fi
