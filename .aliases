@@ -1,9 +1,11 @@
 # Shortcuts
 alias ch='history | grep "git commit"'
 alias hg='history | grep'
-alias yt="subl '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
-alias cyt="cd '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
-alias oyt="open '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
+alias code=\"/Applications/Visual\\ Studio\\ Code.app/contents/Resources/app/bin/code\"
+
+# alias yt="subl '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
+# alias cyt="cd '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
+# alias oyt="open '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
 
 # Detect which `ls` flavor is in use
 if ls --color >/dev/null 2>&1; then # GNU `ls`
@@ -24,5 +26,5 @@ export LS_COLORS='no=00:fi=00:di=04;35:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
 alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias fgrep='fgrep --color=auto'echo alias vscode="open -a Visual\ Studio\ Code.app" >> ~/.zshrc
 alias egrep='egrep --color=auto'

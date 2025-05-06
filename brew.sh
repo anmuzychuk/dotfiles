@@ -81,39 +81,39 @@ else
     echo "Homebrew zsh is already the default shell. Skipping configuration."
 fi
 
-# Git config name
-current_name=$($(brew --prefix)/bin/git config --global --get user.name)
-if [ -z "$current_name" ]; then
-    echo "Please enter your FULL NAME for Git configuration:"
-    read git_user_name
-    $(brew --prefix)/bin/git config --global user.name "$git_user_name"
-    echo "Git user.name has been set to $git_user_name"
-else
-    echo "Git user.name is already set to '$current_name'. Skipping configuration."
-fi
+# # Git config name
+# current_name=$($(brew --prefix)/bin/git config --global --get user.name)
+# if [ -z "$current_name" ]; then
+#     echo "Please enter your FULL NAME for Git configuration:"
+#     read git_user_name
+#     $(brew --prefix)/bin/git config --global user.name "$git_user_name"
+#     echo "Git user.name has been set to $git_user_name"
+# else
+#     echo "Git user.name is already set to '$current_name'. Skipping configuration."
+# fi
 
-# Git config email
-current_email=$($(brew --prefix)/bin/git config --global --get user.email)
-if [ -z "$current_email" ]; then
-    echo "Please enter your EMAIL for Git configuration:"
-    read git_user_email
-    $(brew --prefix)/bin/git config --global user.email "$git_user_email"
-    echo "Git user.email has been set to $git_user_email"
-else
-    echo "Git user.email is already set to '$current_email'. Skipping configuration."
-fi
+# # Git config email
+# current_email=$($(brew --prefix)/bin/git config --global --get user.email)
+# if [ -z "$current_email" ]; then
+#     echo "Please enter your EMAIL for Git configuration:"
+#     read git_user_email
+#     $(brew --prefix)/bin/git config --global user.email "$git_user_email"
+#     echo "Git user.email has been set to $git_user_email"
+# else
+#     echo "Git user.email is already set to '$current_email'. Skipping configuration."
+# fi
 
-# Github uses "main" as the default branch name
-$(brew --prefix)/bin/git config --global init.defaultBranch main
+# # Github uses "main" as the default branch name
+# $(brew --prefix)/bin/git config --global init.defaultBranch main
 
-# Create the tutorial virtual environment I use frequently
-$(brew --prefix)/bin/python3 -m venv "${HOME}/tutorial"
+# # Create the tutorial virtual environment I use frequently
+# $(brew --prefix)/bin/python3 -m venv "${HOME}/tutorial"
 
-# Install Prettier, which I use in both VSCode and Sublime Text
-$(brew --prefix)/bin/npm install --global prettier
+# # Install Prettier, which I use in both VSCode and Sublime Text
+# $(brew --prefix)/bin/npm install --global prettier
 
-# Install DJLint, which I use in VSCode for Django and Jinja2 Template Formatting
-$(brew --prefix)/bin/pipx install djlint
+# # Install DJLint, which I use in VSCode for Django and Jinja2 Template Formatting
+# $(brew --prefix)/bin/pipx install djlint
 
 # Install Ruff, which I use in VSCode for Python Formatting and Linting
 $(brew --prefix)/bin/pipx install ruff
@@ -121,13 +121,13 @@ $(brew --prefix)/bin/pipx install ruff
 # Define an array of applications to install using Homebrew Cask.
 apps=(
     "google-chrome"
-    "firefox"
-    "brave-browser"
-    "sublime-text"
+    # "firefox"
+    # "brave-browser"
+    # "sublime-text"
     "visual-studio-code"
     "git-credential-manager"
-    "spotify"
-    "discord"
+    # "spotify"
+    # "discord"
     "google-drive"
     "gimp"
     "vlc"
@@ -187,20 +187,20 @@ brew upgrade
 brew upgrade --cask
 brew cleanup
 
-echo "Sign in to Google Chrome. Press enter to continue..."
-read
+# echo "Sign in to Google Chrome. Press enter to continue..."
+# read
 
-echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
-read
+# echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
+# read
 
-echo "Sign in to Spotify. Press enter to continue..."
-read
+# echo "Sign in to Spotify. Press enter to continue..."
+# read
 
-echo "Sign in to Discord. Press enter to continue..."
-read
+# echo "Sign in to Discord. Press enter to continue..."
+# read
 
-echo "Open Rectangle and give it necessary permissions. Press enter to continue..."
-read
+# echo "Open Rectangle and give it necessary permissions. Press enter to continue..."
+# read
 
-echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
-read
+# echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
+# read
