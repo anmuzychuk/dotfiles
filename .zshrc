@@ -27,3 +27,16 @@ unset file
 
 # Created by pipx
 export PATH="$PATH:$HOME/.local/bin"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+# fpath+=~/.zfunc
+# autoload -Uz compinit && compinit
+# fpath+=/opt/homebrew/share/zsh/site-functions
+# autoload -Uz compinit && compinit
+
+#DATABRICKS_CLI_DO_NOT_EXECUTE_NEWER_VERSION=1
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
