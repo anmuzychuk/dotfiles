@@ -1,8 +1,8 @@
 {
   // BEGIN - Recording specific settings
-  "editor.fontSize": 16, // Use 18 for Screen Recordings
-  "debug.console.fontSize": 16, // Use 18 for Screen Recordings
-  "terminal.integrated.fontSize": 16, // Use 18 for Screen Recordings
+  "editor.fontSize": 14, // Use 18 for Screen Recordings
+  "debug.console.fontSize": 14, // Use 18 for Screen Recordings
+  "terminal.integrated.fontSize": 14, // Use 18 for Screen Recordings
   "window.zoomLevel": 0, // Use 3 for Screen Recordings
   "github.copilot.editor.enableAutoCompletions": true,
 
@@ -123,5 +123,9 @@
 
   // SQL Tools settings
   "sqltools.useNodeRuntime": true,
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "python.analysis.extraPaths": [],
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }

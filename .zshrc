@@ -39,4 +39,6 @@ eval "$(pyenv init -)"
 #DATABRICKS_CLI_DO_NOT_EXECUTE_NEWER_VERSION=1
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
+complete -o nospace -C /opt/homebrew/bin/terraform terraformexport PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+fpath+=/opt/homebrew/share/zsh/site-functions
+autoload -Uz compinit && compinit
